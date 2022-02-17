@@ -8,7 +8,8 @@
   "type": "module",
   "scripts": {
     "hello": "node src/hello.js",
-    "hello:joost": "NAME=Joost node src/hello.js"
+    "hello:joost": "NAME=Joost node src/hello.js",
+    "action": "gh workflow run build.yml &&  open https://github.com/jschuur/github-actions-build-test/actions/workflows/build.yml"
   },
   "repository": {
     "type": "git",

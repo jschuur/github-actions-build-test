@@ -3,6 +3,9 @@ name: GitHub Actions Build Test
 on:
   [repository_dispatch, workflow_dispatch]
 
+env:
+  NAME: ${{ secrets.NAME }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
