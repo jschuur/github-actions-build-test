@@ -1,3 +1,5 @@
 import 'dotenv/config';
 
-console.log(`Hello ${process.env.NAME || 'stranger'}!`);
+if (process.env.NAME === 'Bobby') console.log('Good Day, Sir Bobby!');
+else console.log(`Hello ${process.env.NAME || 'stranger'}!`);
+
